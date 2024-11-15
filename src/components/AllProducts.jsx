@@ -111,7 +111,7 @@ const AllProducts = () => {
 
             {/* Filter and Reset Icons inside the search bar */}
             <div className="absolute inset-y-0 right-2 flex items-center space-x-3">
-              {/* Filter Icon with Tooltip */}
+              {/* Filter Icon with Tooltip
               <div className="relative group">
                 <FaFilter
                   className="text-gray-600 hover:text-green-600 cursor-pointer text-lg"
@@ -120,7 +120,7 @@ const AllProducts = () => {
                 <div className="absolute bottom-8 right-0 invisible group-hover:visible text-md bg-black text-white p-1 rounded-lg">
                   {t('Sort')}
                 </div>
-              </div>
+              </div> */}
 
               {/* Refresh Icon with Tooltip */}
               <div className="relative group">

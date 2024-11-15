@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo and Title */}
         <div className="flex items-center space-x-2">
           <img src={logoIcon} alt="Shop Icon" className="w-10 h-10 transition-transform duration-500 ease-out transform hover:scale-110" />
-          <h2 className="font-bold text-white italic text-lg md:text-xl transition-all duration-500 ease-in-out hover:text-gray-300 ">
+          <h2 className="font-bold text-white italic text-lg md:text-xl transition-all duration-500 ease-in-out hover:text-gray-300 text-animating ">
             {t('Sri Sakthi Balan Traders')}
           </h2>
           <img src={logoIcon2} alt="Secondary Shop Icon" className="w-5 h-5 hidden sm:block transition-opacity duration-500 ease-in-out opacity-90 hover:opacity-100 scale-110" />
