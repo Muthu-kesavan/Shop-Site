@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/styles/global.css */
+* {
+  font-family: "Outfit";
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background: lightgray;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #f7fafc; /* gray-100 */
+  }
+  50% {
+    color: #4a5568; /* gray-600 */
+  }
+  100% {
+    color: #f7fafc; /* gray-100 */
+  }
+}
+
+.text-animating {
+  animation: colorChange 5s ease-in-out infinite;
+}
+
+@keyframes colorChanges {
+  0% {
+    color: #81c784; /* gray-100 */
+  }
+  25% {
+    color: #4caf50; /* gray-600 */
+  }
+  50% {
+    color: #388e3c; /* gray-100 */
+  }
+  75%{
+    color: #1b5e20;
+  }
+  100%{
+    color:  #81c784;
+  }
+}
+
+.text-newAnimating {
+  animation: colorChanges 5s ease-in-out infinite;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
