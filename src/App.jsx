@@ -1,4 +1,5 @@
 import React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 import './i18n';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -15,6 +16,7 @@ import AllProducts from './components/AllProducts';
 const App = () => {
 
   return (
+    <HelmetProvider>
     <Router>
       <div className='w-full overflow-hidden'>
         <ToastContainer />
@@ -44,6 +46,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+  </HelmetProvider>
   );
 };
 
